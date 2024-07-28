@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page with Image Slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="left-container">
+            <div class="slider">
+                <div class="slider-item active"><img src="images/brown1.png" alt="slider-1"></div>
+                <div class="slider-item"><img src="images/brown2.png" alt="slider-2"></div>
+                <div class="slider-item"><img src="images/brown3.png" alt="slider-3"></div>
+                <div class="slider-item"><img src="images/brown4.png" alt="slider-4"></div>
+                <div class="slider-item"><img src="images/brown5.png" alt="slider-5"></div>
+                <div class="slider-item"><img src="images/brown6.png" alt="slider-6"></div>
+                <div class="slider-item"><img src="images/brown7.png" alt="slider-7"></div>
+                <div class="slider-item"><img src="images/brown8.png" alt="slider-8"></div>
+            </div>
+            <div class="slider-btns">
+                <button id="btn-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="btn-next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+            <div class="dots"></div>
+        </div>
+        <div class="right-container">
+            <h1>Fortune (Brown) Formal Lace Up Shoes For Men UVL-33 By Liberty</h1>
+            <p class="price">₹1299 <span>(inclusive of all taxes)</span></p>
+            <h3 class="availability">AVAILABILITY: <span> IN STOCK</span></h3>
+            <h3>Available Offers</h3>
+            <p class="offer-content">Get 10% instant off on prepaid orders above ₹999 <br>Get 5% instant off on prepaid orders below ₹999</p>
+            <h3 class="selectsize">Select Size <span id="display"></span><a style="text-decoration-color: #ed1c24;" href=""><span class="sizechart">SIZE CHART</span></a></h3>
+            <div class="size-container">
+                <div class="box">
+                    <p>6/40</p>
+                </div>
+                <div class="box">
+                    <p>7/41</p>
+                </div>
+                <div class="box">
+                    <p>8/42</p>
+                </div>
+                <div class="box">
+                    <p>9/43</p>
+                </div>
+            </div>
+            <h3>Colors</h3>
+            <div class="color-container">
+                <div class="color-box" data-color="brown">
+                    <img width="100" src="images/brown1.png" alt="Brown Color">
+                </div>
+                <div class="color-box" data-color="black">
+                    <img width="100" src="images/black1.png" alt="Black Color">
+                </div>
+            </div>
+            <h3>Qty</h3>
+            <div class="qty-container">
+                <button id="minus">-</button>
+                <input type="text" value="1" name="" id="qty">
+                <button id="plus">+</button>
+            </div>
+            <div class="buy-container">
+                <div class="wishlist"><i class="fa-regular fa-heart"></i></div>
+                <div class="btn">ADD TO CART</div>
+                <div class="btn">QUICK BUY</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

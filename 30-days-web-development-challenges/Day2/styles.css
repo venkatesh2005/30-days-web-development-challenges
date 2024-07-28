@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 90%;
+}
+
+.left-container {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.right-container {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+}
+
+.slider{
+    height: 90%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider img{
+    width: 100%;
+    height: auto;
+}
+
+.slider-item, .hidden{
+    display: none;
+    width: 100%;
+}
+
+.active{
+    display: block;
+    animation: fadeAnimation 1s;
+}
+
+.slider-btns{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.slider-btns button{
+    font-size: 30px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+}
+
+.dot{
+    width: 25px;
+    height: 5px;
+    background-color: rgba(50, 43, 43, 0.26);
+    cursor: pointer;
+}
+
+.dot-active{
+    background-color: rgba(32, 30, 30, 0.50);
+}
+
+.right-container h1 {
+    color: #2A2A2A;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: lighter;
+    line-height: 30px;
+}
+
+.price{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    margin: 5px 0 25px 0;
+    font-size: 20px;
+}
+
+.price span{
+    font-weight: lighter;
+}
+
+.availability{
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.availability span{
+    font-weight: 500;
+    color: #11b400;
+}
+
+.right-container h3{
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    letter-spacing: normal;
+    margin: 20px 0;
+    font-variant: medium;
+}
+
+.sizechart {
+    float: right;
+    color: #ed1c24;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.offer-content {
+    border-radius: 15px;
+    border: 1px dashed #707070;
+    padding: 10px;
+}
+
+.size-container {
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.box {
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    min-width: 110px;
+    border: 1px solid #707070;
+    cursor: pointer;
+}
+
+#display{
+    font-weight: normal;
+}
+
+.box.active {
+    background-color: #E2E2E2;
+}
+
+.color-container{
+    display: flex;
+}
+
+.color-container img{
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.buy-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.qty-container{
+    display: flex;
+    margin: 20px 0;
+}
+
+.qty-container button, .qty-container input{
+    font-size: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+    outline: none;
+    padding: 15px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.qty-container input{
+    cursor: default;
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #2A2A2A;
+    background-color: #E2E2E2;
+    margin: 0;
+    font-size: 18px;
+}
+
+.wishlist{
+    padding: 15px;
+    margin-right: 15px;
+    border: 1px solid #707070;
+}
+
+.wishlist:hover{
+    color: white;
+    background-color: #ed1c24;
+    cursor: pointer;
+}
+
+.buy-container .btn{
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    background-color: #ed1c24;
+    width: 100%;
+    margin: 5px;
+    padding: 15px;
+}
+
+.buy-container .btn:hover{
+    opacity: 0.8;
+}
+
+@keyframes fadeAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transition: opacity linear;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-container {
+        flex-direction: column;
+    }
+    .left-container, .right-container {
+        width: 100%;
+    }
+}

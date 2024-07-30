@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS Sidebar Menu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <button class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></button>
+        <div class="logo">CMS</div>
+        <nav class="nav-menu">
+            <a href="#dashboard" class="nav-item"><i class="fas fa-tachometer-alt"></i> <span class="nav-text">Dashboard</span></a>
+            <a href="#posts" class="nav-item"><i class="fas fa-edit"></i> <span class="nav-text">Posts</span></a>
+            <a href="#media" class="nav-item"><i class="fas fa-photo-video"></i> <span class="nav-text">Media</span></a>
+            <a href="#pages" class="nav-item"><i class="fas fa-file-alt"></i> <span class="nav-text">Pages</span></a>
+            <a href="#comments" class="nav-item"><i class="fas fa-comments"></i> <span class="nav-text">Comments</span></a>
+            <a href="#users" class="nav-item"><i class="fas fa-users"></i> <span class="nav-text">Users</span></a>
+            <a href="#settings" class="nav-item"><i class="fas fa-cogs"></i> <span class="nav-text">Settings</span></a>
+            <a href="#analytics" class="nav-item"><i class="fas fa-chart-line"></i> <span class="nav-text">Analytics</span></a>
+            <a href="#plugins" class="nav-item"><i class="fas fa-plug"></i> <span class="nav-text">Plugins</span></a>
+            <a href="#tools" class="nav-item"><i class="fas fa-tools"></i> <span class="nav-text">Tools</span></a>
+        </nav>
+    </div>
+    <div class="main-content" id="mainContent">
+        <section id="dashboard">
+            <h1>Dashboard</h1>
+            <p>Content for the Dashboard section.</p>
+        </section>
+        <section id="posts">
+            <h1>Posts</h1>
+            <p>Content for the Posts section.</p>
+        </section>
+        <section id="media">
+            <h1>Media</h1>
+            <p>Content for the Media section.</p>
+        </section>
+        <section id="pages">
+            <h1>Pages</h1>
+            <p>Content for the Pages section.</p>
+        </section>
+        <section id="comments">
+            <h1>Comments</h1>
+            <p>Content for the Comments section.</p>
+        </section>
+        <section id="users">
+            <h1>Users</h1>
+            <p>Content for the Users section.</p>
+        </section>
+        <section id="settings">
+            <h1>Settings</h1>
+            <p>Content for the Settings section.</p>
+        </section>
+        <section id="analytics">
+            <h1>Analytics</h1>
+            <p>Content for the Analytics section.</p>
+        </section>
+        <section id="plugins">
+            <h1>Plugins</h1>
+            <p>Content for the Plugins section.</p>
+        </section>
+        <section id="tools">
+            <h1>Tools</h1>
+            <p>Content for the Tools section.</p>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script>
+        document.getElementById('menuToggle').addEventListener('click', function() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('expanded'); 
+            sidebar.classList.toggle('active'); 
+        });
+    </script>
+</body>
+</html>

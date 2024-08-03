@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#msg{
+    font-size: 18px;
+}
+#score{
+   background-color: black;
+   border-radius: 8px;
+   color: yellow;
+   padding: 3px;
+    font-size: 16px;
+}
+
+#gameBoard {
+    border: 2px solid black;
+    background: linear-gradient(rgb(34, 139, 34), rgb(255, 215, 0));
+    width: 500px;
+    height: 500px;
+}
+
+.controls {
+    margin: 20px auto 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-weight: bolder;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+}
+
+@media (max-width: 600px) {
+    #gameBoard {
+        width: 300px;
+        height: 300px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        line-height: 40px;
+        font-size: 25px;
+        padding: 5px;
+    }
+}

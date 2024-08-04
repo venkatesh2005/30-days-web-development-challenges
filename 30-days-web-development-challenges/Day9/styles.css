@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #171a20;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    overflow-x: hidden; 
+}
+
+header {
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 35px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.logo svg {
+    fill: white;
+    color: white;
+    width: 120px;
+    height: 35px;
+}
+
+.center-desktop a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.center-desktop a:hover {
+    color: black;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+}
+
+.right-desktop i {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    padding: 5px;
+    font-weight: lighter;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%; 
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.right-desktop {
+    padding: 10px;
+}
+
+.content {
+    text-align: center;
+    color: white;
+}
+
+.content h1 {
+    padding-top: 50px;
+    margin-bottom: -10px;
+    font-size: 56px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+}
+
+.content h3 {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    display: inline-block;
+    font-size: 26px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+.underline::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: .5px;
+    background-color: white;
+}
+
+sup {
+    font-size: 8px;
+}
+
+.content p {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+}
+
+.btn-container button {
+    margin: 10px;
+    font-size: 14px;
+    width: 260px;
+    border-radius: 5px;
+    border: none;
+    padding: 12px 5px;
+}
+
+.btn-container button:first-child {
+    font-weight: bolder;
+    color: white;
+    background-color: #3E6AE1;
+}
+
+footer {
+    background-color: black;
+}
+
+footer .content {
+    line-height: 15px;
+    padding: 20px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 650px;
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.navigation {
+    margin: 10px;
+}
+
+.navigation a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 5px;
+}
+
+.center-desktop:hover .nav-expand {
+    display: block;
+}
+
+.menu-bar {
+    display: none;
+}
+
+.menu-bar i {
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    header {
+        margin: 0 15px;
+        font-size: 12px;
+    }
+
+    .logo svg {
+        width: 120px;
+        height: 40px;
+    }
+
+    .center-desktop, .right-desktop {
+        display: none;
+    }
+
+    .btn-container button {
+        width: 200px;
+        padding: 10px 5px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    .menu-bar {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        z-index: 10;
+    }
+}

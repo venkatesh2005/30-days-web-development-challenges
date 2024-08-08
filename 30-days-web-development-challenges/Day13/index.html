@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <section class="signup-section">
+        <div class="signup-container">
+            <form action="#" id="signupForm" class="signup-form" autocomplete="off">
+                <h2>Create Account</h2>
+
+                <div class="input-group">
+                    <label for="user">Username</label>
+                    <input type="text" id="user" data-label="Username" placeholder="Enter your username" />
+                    <span class="error-message">Please enter a valid username.</span>
+                </div>
+                <div class="input-group">
+                    <label for="userEmail">Email</label>
+                    <input type="email" id="userEmail" data-label="Email" placeholder="Enter your email" />
+                    <span class="error-message">Please enter a valid email address.</span>
+                </div>
+                <div class="input-group">
+                    <label for="userPassword">Password</label>
+                    <input type="password" id="userPassword" placeholder="Create a password" data-label="Password" />
+                    <span class="error-message">Password must be at least 6 characters.</span>
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input type="password" id="confirmPassword" placeholder="Confirm your password" data-label="Confirm Password" />
+                    <span class="error-message">Passwords do not match.</span>
+                </div>
+                <button type="submit" class="submit-btn">Sign Up</button>
+                <p class="success-message">You have successfully signed up!</p>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

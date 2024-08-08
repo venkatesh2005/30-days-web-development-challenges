@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #6c63ff, #48dbfb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.signup-section {
+  width: 100%;
+  max-width: 500px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px;
+}
+
+.signup-container {
+  padding: 30px;
+}
+
+.signup-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #6c63ff;
+  outline: none;
+}
+
+.error-message {
+  font-size: 12px;
+  margin-top: 5px;
+  color: #e74c3c;
+  visibility: hidden;
+}
+
+.input-group.error .error-message {
+  visibility: visible;
+}
+
+.input-group.error input {
+  border-color: #e74c3c;
+}
+
+.input-group.success input {
+  border-color: #2ecc71;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #5348c4;
+}
+
+.success-message {
+  color: #2ecc71;
+  text-align: center;
+  margin-top: 20px;
+  visibility: hidden;
+}
+
+form.submitted .success-message {
+  visibility: visible;
+}
+
+@media (max-width: 600px) {
+  .signup-container {
+    padding: 20px;
+  }
+}

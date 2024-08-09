@@ -1,0 +1,149 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600&display=swap');
+
+.pricing-table-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #f5f5f5, #d7ccc8);
+  border-radius: 15px;
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.2);
+  flex-wrap: wrap;
+  font-family: 'Roboto', sans-serif;
+}
+
+.plan {
+  flex: 1;
+  padding: 20px;
+  background: #ffffff; 
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.plan:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+.plan-header {
+  position: relative;
+  width: 100%;
+}
+
+.plan-header h2 {
+  position: relative;
+  display: block;
+  padding: 20px;
+  font-size: 1.5em;
+  color: #fff; 
+  text-align: center;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff5722, #e64a19); 
+  clip-path: polygon(
+    50% 0%, 
+    100% 25%, 
+    100% 75%, 
+    50% 100%, 
+    0% 75%, 
+    0% 25%
+  );
+  margin: 0;
+}
+
+.starter-plan .plan-header h2 {
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+}
+
+.professional-plan .plan-header h2 {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+}
+
+.ultimate-plan .plan-header h2 {
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+}
+
+.description {
+  text-align: center;
+  font-size: 0.9em;
+  color: #555; 
+  margin-bottom: 20px;
+}
+
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.features li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; 
+}
+
+.tick {
+  color: #4caf50;
+}
+
+.cross {
+  color: #f44336; 
+}
+
+.price {
+  text-align: center;
+  font-size: 1.5em;
+  color: #333; 
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.term, .pay-today {
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.buy-now {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.starter-plan .buy-now {
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+}
+
+.professional-plan .buy-now {
+  background: linear-gradient(135deg, #ff9800, #f57c00);
+}
+
+.ultimate-plan .buy-now {
+  background: linear-gradient(135deg, #4caf50, #388e3c);
+}
+
+.buy-now:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .pricing-table-container {
+    flex-direction: column;
+  }
+
+  .plan {
+    margin-bottom: 20px;
+  }
+}

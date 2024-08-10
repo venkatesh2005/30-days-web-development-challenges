@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f5f5f5;
+    height: 100vh;
+    margin: 20px;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.left-content-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+    width: 100%;
+}
+
+.lower-header {
+    position: relative;
+}
+
+.steering {
+    position: absolute;
+    left: 10px;
+    bottom: 70px;
+    font-size: 35px;
+    transform: rotate(-90deg);
+}
+
+.upper-header h3, .lower-header h3 {
+    transform: rotate(-90deg);
+    margin: 0;
+    font-size: 16px;
+    float: left;
+}
+
+.upper-main-contianer, .lower-main-contianer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.double-container {
+    display: flex;
+}
+
+.single-container {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.rectangle {
+    cursor: pointer;
+    position: relative;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #c0c0c0;
+    text-align: center;
+    line-height: 40px;
+    margin: 10px;
+    background-color: #e0e0e0;
+    color: #333;
+}
+
+.small-rectangle {
+    position: absolute;
+    width: 5px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 80%;
+    background-color: #333;
+    border: 1px solid #c0c0c0;
+    border-radius: 5px;
+}
+
+.rectangle.available {
+    background-color: #fff;
+    border: 1px solid #b3b3b3;
+}
+
+.rectangle.selected {
+    background-color: #ff6f6f;
+    color: #fff;
+}
+
+.rectangle.unavailable {
+    background-color: #ff4d4d;
+    cursor: not-allowed;
+}
+
+.booking-summary {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button#confirm-button {
+    background-color: #ff6f6f;
+}
+
+button#clear-button {
+    background-color: #ff4d4d;
+}
+
+button#confirm-button:hover {
+    background-color: #e03a3a;
+}
+
+button#clear-button:hover {
+    background-color: #cc0000;
+}
+
+.tooltip {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.rectangle:hover .tooltip {
+    display: block;
+}
+
+.selected-seats {
+    color: #ff6f6f; 
+    font-weight: bold;
+}
+
+.total-price {
+    color: #4caf50; 
+    font-weight: bold;
+}
+
+.available-seats {
+    color: #2196f3;
+    font-weight: bold;
+}

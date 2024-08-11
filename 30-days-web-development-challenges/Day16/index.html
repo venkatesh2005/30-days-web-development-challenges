@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="notice">
+            <strong>Important Notice:</strong> This page is a demo and does not collect or store any personal or sensitive information, including card details. It is solely for demonstration purposes. Please do not enter any real personal information.
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="front">
+                    <div class="header">
+                        <h3>CREDIT CARD</h3>
+                        <h3>BANK NAME</h3>
+                    </div>
+                    <div class="chip">
+                        <img src="images/chip.png" alt="Chip Logo">
+                    </div>
+                    <div class="card-number">
+                        <h3>xxxx xxxx xxxx xxxx</h3>
+                    </div>
+                    <div class="details">
+                        <div class="valid-from">
+                            <p>VALID<br>FROM</p>
+                            <p class="vdate">08/24</p>
+                        </div>
+                        <div class="valid-thru">
+                            <p>VALID<br>THRU</p>
+                            <p class="vdate valid-thru-date">MM/YY</p>
+                        </div>
+                    </div>
+                    <div class="name">
+                        <h2>YOUR NAME</h2>
+                        <img class="visa-logo" src="images/visa.png" alt="Visa Logo">
+                    </div>
+                </div>
+
+                <div class="back">
+                    <p class="support">24/7 Customer Support</p>
+                    <div class="stripe"></div>
+                    <div class="cvv-box">CVV: <span class="cvv-number">123</span></div>
+                    <div class="contact-info">
+                        <p>Customer Service: 1-800-123-4567</p>
+                        <p>Website: www.bankname.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form class="form-container">
+            <h2>Card Details</h2>
+
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Card Holder Name">
+            </div>
+
+            <div class="input-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+            </div>
+
+            <div class="input-group">
+                <div class="row">
+                    <div class="valid-thr">
+                        <label for="valid-thru-month">Valid Thru</label>
+                        <select id="valid-thru-month" name="valid-thru-month">
+                            <option value="Month">Month</option>
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+
+                        <select id="valid-thru-year" name="valid-thru-year">
+                            <option value="Year">Year</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <option value="2028">2028</option>
+                            <option value="2029">2029</option>
+                            <option value="2030">2030</option>
+                        </select>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="cvv">CVV</label>
+                        <input class="cvv" type="text" id="cvv" name="cvv" maxlength="3" placeholder="123">
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+            <p id="submit-message" class="hidden">Your card has been successfully submitted!</p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

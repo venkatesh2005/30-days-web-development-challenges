@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <h1>Independence Day Puzzle Game</h1>
+        </header>
+        <div class="puzzle-container">
+            <div class="puzzle-board">
+                <div class="puzzle-piece" draggable="true" id="piece1">
+                    <img src="images/row-1-column-1.jpg" alt="Piece 1">
+                </div>
+                <div class="puzzle-piece" draggable="true" id="piece2">
+                    <img src="images/row-1-column-2.jpg" alt="Piece 2">
+                </div>
+                <div class="puzzle-piece" draggable="true" id="piece3">
+                    <img src="images/row-1-column-3.jpg" alt="Piece 3">
+                </div>
+                <div class="puzzle-piece" draggable="true" id="piece4">
+                    <img src="images/row-2-column-1.jpg" alt="Piece 4">
+                </div>
+                <div class="puzzle-piece" draggable="true" id="piece5">
+                    <img src="images/row-2-column-2.jpg" alt="Piece 5">
+                </div>
+                <div class="puzzle-piece" draggable="true" id="piece6">
+                    <img src="images/row-2-column-3.jpg" alt="Piece 6">
+                </div>
+                <div class="puzzle-piece" draggable="true" id="piece7">
+                    <img src="images/row-3-column-1.jpg" alt="Piece 7">
+                </div>
+                <div class="puzzle-piece" draggable="true" id="piece8">
+                    <img src="images/row-3-column-2.jpg" alt="Piece 8">
+                </div>
+                <div class="puzzle-piece" draggable="true" id="piece9">
+                    <img src="images/row-3-column-3.jpg" alt="Piece 9">
+                </div>
+            </div>
+            <div class="puzzle-target">
+                <div class="target-slot" id="slot1"></div>
+                <div class="target-slot" id="slot2"></div>
+                <div class="target-slot" id="slot3"></div>
+                <div class="target-slot" id="slot4"></div>
+                <div class="target-slot" id="slot5"></div>
+                <div class="target-slot" id="slot6"></div>
+                <div class="target-slot" id="slot7"></div>
+                <div class="target-slot" id="slot8"></div>
+                <div class="target-slot" id="slot9"></div>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="start-button">Start Game</button>
+            <button id="reset-button">Reset Game</button>
+            <div id="timer">Time: 00:00</div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>    
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Multi-Level Navbar</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="#">LOGO</a>
+      </div>
+      <nav>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <div class="close-menu">
+          <i class="fas fa-times"></i>
+        </div>
+        <ul class="menu-list">
+          <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+          <li>
+            <a href="#"><i class="fas fa-user"></i> About <i class="fas fa-caret-down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="#"><i class="fas fa-info-circle"></i> Our Story</a></li>
+              <li>
+                <a href="#"><i class="fas fa-users"></i> Team <i class="fas fa-caret-right"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="#"><i class="fas fa-user-tie"></i> Management</a></li>
+                  <li><a href="#"><i class="fas fa-code"></i> Developers</a></li>
+                  <li><a href="#"><i class="fas fa-paint-brush"></i> Designers</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><i class="fas fa-briefcase"></i> Careers</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-cogs"></i> Services <i class="fas fa-caret-down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="#"><i class="fas fa-laptop-code"></i> Web Development</a></li>
+              <li><a href="#"><i class="fas fa-mobile-alt"></i> App Development</a></li>
+              <li>
+                <a href="#"><i class="fas fa-robot"></i> AI Solutions <i class="fas fa-caret-right"></i></a>
+                <ul class="sub-menu">
+                  <li><a href="#"><i class="fas fa-comments"></i> Chatbots</a></li>
+                  <li><a href="#"><i class="fas fa-chart-line"></i> Predictive Analytics</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-box"></i> Products <i class="fas fa-caret-down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="#"><i class="fas fa-software"></i> Software</a></li>
+              <li><a href="#"><i class="fas fa-hardware"></i> Hardware</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><i class="fas fa-star"></i> Features <i class="fas fa-caret-down"></i></a>
+            <ul class="sub-menu">
+              <li><a href="#"><i class="fas fa-shield-alt"></i> Security</a></li>
+              <li><a href="#"><i class="fas fa-tachometer-alt"></i> Performance</a></li>
+              <li><a href="#"><i class="fas fa-expand"></i> Scalability</a></li>
+            </ul>
+          </li>
+          <li><a href="#"><i class="fas fa-briefcase"></i> Portfolio</a></li>
+          <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

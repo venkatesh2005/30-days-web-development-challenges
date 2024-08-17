@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Restaurant Menu</h1>
+        <nav>
+            <a href="#appetizers">Appetizers</a>
+            <a href="#mainCourses">Main Courses</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#beverages">Beverages</a>
+        </nav>
+        <button id="cart-icon" aria-label="Cart">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+    </header>
+
+    <div class="filter-container">
+        <label for="category">Filter by category:</label>
+        <select id="category">
+            <option value="">All</option>
+            <option value="appetizers">Appetizers</option>
+            <option value="mainCourses">Main Courses</option>
+            <option value="desserts">Desserts</option>
+            <option value="beverages">Beverages</option>
+        </select>
+    </div>
+
+    <main>
+        <section id="appetizers">
+            <h2>Appetizers</h2>
+            <div id="appetizers-list" class="menu-list"></div>
+        </section>
+
+        <section id="mainCourses">
+            <h2>Main Courses</h2>
+            <div id="mainCourses-list" class="menu-list"></div>
+        </section>
+
+        <section id="desserts">
+            <h2>Desserts</h2>
+            <div id="desserts-list" class="menu-list"></div>
+        </section>
+
+        <section id="beverages">
+            <h2>Beverages</h2>
+            <div id="beverages-list" class="menu-list"></div>
+        </section>
+    </main>
+
+    <div id="item-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <span id="modal-price"></span>
+            <button id="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+    <aside id="cart" class="cart">
+        <h2>Cart Summary</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: ₹0</p>
+        <button id="checkout-btn">Checkout</button>
+    </aside>
+
+    <button id="backToTopBtn" class="back-to-top">Back to Top</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

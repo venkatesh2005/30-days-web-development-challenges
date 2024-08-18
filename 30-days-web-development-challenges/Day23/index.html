@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+</head>
+<body>
+    <div class="info_box activeInfo">
+        <div class="info-title"><span>Instructions</span></div>
+        <div class="info-list">
+            <div class="info">1. You have a total of <span>2 minutes</span> for the entire quiz.</div>
+            <div class="info">2. Answer changes are not allowed after submission.</div>
+            <div class="info">3. Time's up means no further selections.</div>
+            <div class="info">4. Scores are based on correct responses.</div>
+        </div>
+        <div class="start_btn">
+            <button id="startQuiz">Start Quiz Now</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="header_info">
+                <div class="total_que">
+                    <span id="currentQuestion">Question 1</span> / <span id="totalQuestions">10</span>
+                </div>
+                <div class="score_display">Score: <span id="score">0</span></div>
+                <div class="timer">
+                    <div class="time_left_txt"><i class="fas fa-clock"></i></div>
+                    <div class="timer_sec">1:00</div>
+                </div>
+            </div>
+        </header>
+        
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+        <footer>
+            <button class="prev_btn">Prev Question</button>
+            <button class="next_btn">Next Question</button>
+            <button class="submit_btn" style="display: none;">Submit</button>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

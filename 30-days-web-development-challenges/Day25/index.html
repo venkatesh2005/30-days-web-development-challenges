@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags Input Box</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1><i class="fas fa-tags"></i> Tags</h1>
+        </header>
+        <main class="main-content">
+            <p class="instruction">Type your tags and press enter or comma</p>
+            <div class="tag-container">
+                <input type="text" class="tag-input" placeholder="Add a tag...">
+            </div>
+        </main>
+        <footer class="footer">
+            <p><span class="tags-remaining">10</span> tags remaining</p>
+            <button id="removeAll" class="clear-btn">Clear All</button>
+            <button id="copy" class="copy-btn">Copy Tags</button>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

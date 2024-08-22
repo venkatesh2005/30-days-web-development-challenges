@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <div class="dropdown-container">
+        <i class="fas fa-gamepad"></i>
+        <select id="modeSelect">
+            <option value="player" selected>Player vs Player</option>
+            <option value="computer">Player vs Computer</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <div class="box" data-index="0"></div>
+        <div class="box" data-index="1"></div>
+        <div class="box" data-index="2"></div>
+        <div class="box" data-index="3"></div>
+        <div class="box" data-index="4"></div>
+        <div class="box" data-index="5"></div>
+        <div class="box" data-index="6"></div>
+        <div class="box" data-index="7"></div>
+        <div class="box" data-index="8"></div>
+    </div>
+    
+    <div id="status">X Your Turn</div>
+    <button id="restart">Restart</button>
+    
+    <audio id="moveSound" src="sounds/move.mp3"></audio>
+    <audio id="winSound" src="sounds/win.mp3"></audio>
+    <audio id="drawSound" src="sounds/draw.mp3"></audio>
+    <audio id="restartSound" src="sounds/restart.mp3"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>

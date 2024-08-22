@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1e272e;
+  color: #d2dae2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.dropdown-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.dropdown-container i {
+  color: #d2dae2;
+  font-size: 54px;
+  margin-right: 10px;
+}
+
+#modeSelect {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #576574;
+  border-radius: 5px;
+  background-color: #485460;
+  color: #d2dae2;
+  margin-top: 10px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 10px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #485460;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 35px;
+  transition: transform 0.3s;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+#status {
+  margin: 20px 0;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+button {
+  width: 160px;
+  height: 45px;
+  font-size: 18px;
+  color: white;
+  background-color: #ff4757;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff6b81;
+}
+
+.win {
+  background-color: #1dd1a1;
+  animation: winAnimation ease-in-out 1s infinite;
+}
+
+@keyframes winAnimation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+#playerX, #playerO {
+  padding: 10px;
+  background-color: #576574;
+  border-radius: 5px;
+  flex: 1;
+  margin: 0 5px;
+  text-align: center;
+}
+
+#playerX.active, #playerO.active {
+  background-color: #2ed573;
+}
+
+@media (max-width: 500px) {
+  .container {
+    grid-template-columns: repeat(3, 80px);
+    gap: 8px;
+  }
+
+  .box {
+    width: 80px;
+    height: 80px;
+    font-size: 28px;
+  }
+
+  #status {
+    font-size: 20px;
+  }
+
+  button {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .dropdown-container i {
+    font-size: 40px;
+  }
+
+  #modeSelect {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .scoreboard {
+    font-size: 16px;
+  }
+}

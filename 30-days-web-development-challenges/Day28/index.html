@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dictionary-app">
+        <header class="app-header">
+            <h1>Word Explorer</h1>
+        </header>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for a word..." autocomplete="off">
+            <button id="clearBtn"><i class="fas fa-times"></i></button>
+            <button id="searchBtn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="result-container">
+            <div class="word-section">
+                <div class="word-title">
+                    <h2 id="word"></h2>
+                    <i id="audioIcon" class="fas fa-volume-up"></i>
+                </div>
+                <p id="phonetics" class="phonetics"></p>
+            </div>
+            <div id="definitionSection" class="definition-section">
+                
+            </div>
+            <div id="examplesSection" class="examples-section">
+                
+            </div>
+            <div id="synonymsSection" class="synonyms-section">
+                
+            </div>
+            <div id="antonymsSection" class="antonyms-section">
+               
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

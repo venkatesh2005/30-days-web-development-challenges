@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.dictionary-app {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.app-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.app-header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #4d59fb;
+}
+
+.search-container {
+    display: flex;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.05);
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-container input:focus {
+    border-color: #4d59fb;
+    box-shadow: 0px 4px 12px rgba(77, 89, 251, 0.2);
+}
+
+.search-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#searchBtn {
+    right: 10px;
+    color: #4d59fb;
+}
+
+#clearBtn {
+    right: 50px;
+    color: #ff6b6b;
+    display: none;
+}
+
+.result-container {
+    display: none;
+    margin-top: 20px;
+}
+
+.result-container.active {
+    display: block;
+}
+
+.word-section {
+    margin-bottom: 20px;
+}
+
+.word-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.word-title h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+}
+
+.word-title i {
+    font-size: 24px;
+    color: #4d59fb;
+    cursor: pointer;
+}
+
+.phonetics {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.definition-section,
+.examples-section,
+.synonyms-section,
+.antonyms-section {
+    margin-bottom: 20px;
+}
+
+.definition-section h3,
+.examples-section h3,
+.synonyms-section h3,
+.antonyms-section h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #4d59fb;
+    margin-bottom: 10px;
+}
+
+.definition-section p,
+.examples-section p {
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.definition-section ul,
+.examples-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 16px;
+    color: #444;
+    line-height: 1.5;
+    margin: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.definition-section ul li,
+.examples-section ul li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+}
+
+.synonyms-section,
+.antonyms-section {
+    margin-bottom: 20px;
+}
+
+.synonyms-section .synonym-list,
+.antonyms-section .antonym-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+}
+
+.synonyms-section .synonym-list span,
+.antonyms-section .antonym-list span {
+    background-color: #f3f4ff;
+    color: #4d59fb;
+    padding: 8px 16px; 
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+

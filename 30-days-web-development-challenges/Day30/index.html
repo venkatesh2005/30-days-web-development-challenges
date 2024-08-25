@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="loader" class="loader-container">
+        <div class="loader"></div>
+        <p class="loader-text">Loading... Please wait, this may take a few seconds.</p>
+    </div>
+
+    <header>
+        <div class="logo">Course<span>Hub</span></div>
+        <nav class="navbar" id="navbar">
+            <ul class="nav-links">
+                <li><a href="#course-categories">Courses</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions" id="headerActions">
+            <input type="text" placeholder="Search courses..." class="search-bar">
+            <button class="cta-btn">Sign In</button>
+            <button class="cta-btn secondary">Get Started</button>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <input type="text" placeholder="Search courses..." class="search-bar">
+            <ul class="nav-links">
+                <li><a href="#course-categories">Courses</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-actions">
+                <button class="cta-btn">Sign In</button>
+                <button class="cta-btn secondary">Get Started</button>
+            </div>
+        </div>
+    </header>
+
+
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unlock Your Potential</h1>
+            <p>Embark on your learning journey and connect with millions of students.</p>
+            <div class="hero-buttons">
+                <a href="#course-categories"><button class="cta-btn">Browse Courses</button></a>
+                <button class="cta-btn secondary">Watch Intro Video</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-courses">
+        <div class="section-title">
+            <h2>Featured Courses</h2>
+            <p>Explore our top courses that have helped thousands of learners achieve their goals.</p>
+        </div>
+        <div class="courses-grid">
+            <div class="course-card">
+                <img src="images/web-dev.jpg" alt="Course 1">
+                <h3>Web Development Masterclass</h3>
+                <p>Learn the fundamentals of web development from scratch.</p>
+                <button class="cta-btn">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/dsa.jpg" alt="Course 2">
+                <h3>Data Science & Analytics</h3>
+                <p>Dive into the world of data science and learn to analyze data effectively.</p>
+                <button class="cta-btn">Enroll Now</button>
+            </div>
+            <div class="course-card">
+                <img src="images/uiux.jpg" alt="Course 3">
+                <h3>UI/UX Design Bootcamp</h3>
+                <p>Master the principles of user interface and user experience design.</p>
+                <button class="cta-btn">Enroll Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="section-title">
+            <h2>How It Works</h2>
+            <p>Follow these simple steps to start your learning journey with us.</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-icon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <h3>Step 1: Choose Your Course</h3>
+                <p>Browse through a wide variety of courses and select the one that suits you best.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon">
+                    <i class="fas fa-play-circle"></i>
+                </div>
+                <h3>Step 2: Learn at Your Own Pace</h3>
+                <p>Watch lessons, complete quizzes, and learn at a pace that's comfortable for you.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Step 3: Earn a Certificate</h3>
+                <p>Receive a certificate of completion that you can share with employers and peers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="section-title">
+            <h2>What Our Learners Are Saying</h2>
+        </div>
+        <div class="testimonial-carousel">
+            <div class="testimonial-item">
+                <div class="testimonial-content">
+                    <p>"This platform has transformed my career! The courses are comprehensive and the instructors are
+                        amazing."</p>
+                </div>
+                <div class="testimonial-details">
+                    <img src="images/student1.jpg" alt="Student 1" class="testimonial-photo">
+                    <div class="testimonial-info">
+                        <h4>Vignesh </h4>
+                        <span>Web Development</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-item">
+                <div class="testimonial-content">
+                    <p>"The flexibility of learning at my own pace has been a game-changer. The courses are
+                        well-structured and very informative."</p>
+                </div>
+                <div class="testimonial-details">
+                    <img src="images/student2.jpg" alt="Student 2" class="testimonial-photo">
+                    <div class="testimonial-info">
+                        <h4>Suresh </h4>
+                        <span>Data Science</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-item">
+                <div class="testimonial-content">
+                    <p>"I’ve learned so much in such a short time. The interactive elements and quizzes helped reinforce
+                        my knowledge."</p>
+                </div>
+                <div class="testimonial-details">
+                    <img src="images/student3.jpg" alt="Student 3" class="testimonial-photo">
+                    <div class="testimonial-info">
+                        <h4>Harini Kumar</h4>
+                        <span>Graphic Design</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-item">
+                <div class="testimonial-content">
+                    <p>"The instructors are highly knowledgeable and always willing to help. I highly recommend this
+                        platform!"</p>
+                </div>
+                <div class="testimonial-details">
+                    <img src="images/student4.jpg" alt="Student 4" class="testimonial-photo">
+                    <div class="testimonial-info">
+                        <h4>Arjun Kumar</h4>
+                        <span>Cybersecurity</span>
+                        <div class="rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="instructors">
+        <div class="section-title">
+            <h2>Meet Our Instructors</h2>
+        </div>
+        <div class="instructor-cards">
+            <div class="instructor-card">
+                <img src="images/instructor1.jpg" alt="Instructor 1" class="instructor-photo">
+                <div class="instructor-info">
+                    <h4>Dr. Arvind Rajan</h4>
+                    <span>Data Science Expert</span>
+                    <p>With over 15 years of experience in data science, Dr. Arvind Rajan has taught thousands of
+                        students how to master data analysis.</p>
+                    <div class="instructor-stats">
+                        <span>10 Courses</span>
+                        <span>12,000+ Students</span>
+                    </div>
+                    <a href="#" class="view-profile">View Profile</a>
+                </div>
+            </div>
+
+            <div class="instructor-card">
+                <img src="images/instructor2.jpg" alt="Instructor 2" class="instructor-photo">
+                <div class="instructor-info">
+                    <h4>Mr. Venkatesh M</h4>
+                    <span>Web Development Guru</span>
+                    <p>Venkatesh has been in the web development industry for over a decade, helping students build
+                        powerful web applications.</p>
+                    <div class="instructor-stats">
+                        <span>8 Courses</span>
+                        <span>9,500+ Students</span>
+                    </div>
+                    <a href="#" class="view-profile">View Profile</a>
+                </div>
+            </div>
+
+            <div class="instructor-card">
+                <img src="images/instructor3.jpg" alt="Instructor 3" class="instructor-photo">
+                <div class="instructor-info">
+                    <h4>Ms. Subha Natarajan</h4>
+                    <span>Graphic Design Pro</span>
+                    <p>Subha has a keen eye for design and has helped numerous students enhance their creative skills
+                        through her courses.</p>
+                    <div class="instructor-stats">
+                        <span>6 Courses</span>
+                        <span>7,200+ Students</span>
+                    </div>
+                    <a href="#" class="view-profile">View Profile</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing-plan">
+        <div class="section-title">
+            <h2>Pricing Plans</h2>
+            <p>Choose a plan that suits your needs and start learning today.</p>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h3>Basic Plan</h3>
+                <p>₹2,399/month</p>
+                <ul>
+                    <li>Access to all basic courses</li>
+                    <li>1-on-1 support</li>
+                    <li>Community access</li>
+                </ul>
+                <button class="cta-btn">Subscribe</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Standard Plan</h3>
+                <p>₹4,099/month</p>
+                <ul>
+                    <li>Access to all courses</li>
+                    <li>Priority support</li>
+                    <li>Monthly webinars</li>
+                </ul>
+                <button class="cta-btn">Subscribe</button>
+            </div>
+            <div class="pricing-card">
+                <h3>Premium Plan</h3>
+                <p>₹8,299/month</p>
+                <ul>
+                    <li>Access to all courses</li>
+                    <li>Personal mentorship</li>
+                    <li>Exclusive resources</li>
+                </ul>
+                <button class="cta-btn">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="course-categories" id="course-categories">
+        <h2>Browse by Category</h2>
+        <div class="categories-grid">
+            <div class="category-card">
+                <a href="#frontend-development">
+                    <img src="images/course1.jpg" alt="Frontend Development">
+                    <div class="category-info">
+                        <h3>Frontend Development</h3>
+                        <p>120 Courses</p>
+                    </div>
+                </a>
+            </div>
+            <div class="category-card">
+                <a href="#backend-development">
+                    <img src="images/course2.jpg" alt="Backend Development">
+                    <div class="category-info">
+                        <h3>Backend Development</h3>
+                        <p>98 Courses</p>
+                    </div>
+                </a>
+            </div>
+            <div class="category-card">
+                <a href="#mobile-app-development">
+                    <img src="images/course3.jpg" alt="Mobile App Development">
+                    <div class="category-info">
+                        <h3>Mobile App Development</h3>
+                        <p>75 Courses</p>
+                    </div>
+                </a>
+            </div>
+            <div class="category-card">
+                <a href="#data-analytics">
+                    <img src="images/course4.jpg" alt="Data Analytics">
+                    <div class="category-info">
+                        <h3>Data Analytics</h3>
+                        <p>65 Courses</p>
+                    </div>
+                </a>
+            </div>
+            <div class="category-card">
+                <a href="#cloud-computing">
+                    <img src="images/course5.jpg" alt="Cloud Computing">
+                    <div class="category-info">
+                        <h3>Cloud Computing</h3>
+                        <p>55 Courses</p>
+                    </div>
+                </a>
+            </div>
+            <div class="category-card">
+                <a href="#cybersecurity">
+                    <img src="images/course6.jpg" alt="Cybersecurity">
+                    <div class="category-info">
+                        <h3>Cybersecurity</h3>
+                        <p>45 Courses</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="cta-section">
+        <div class="cta-content">
+            <h2>Ready to Start Learning?</h2>
+            <p>Sign up today and get access to all our courses.</p>
+            <div class="cta-buttons">
+                <a href="#signup" class="cta-primary-btn">Sign Up Now</a>
+                <a href="#course-categories" class="cta-secondary-btn">Browse Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#faqs">FAQs</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Newsletter Signup</h3>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+
+                <div id="contact" class="footer-column">
+                    <h3>Contact Us</h3>
+                    <p>1234 Learning Avenue<br>Chennai, TN 600001<br>India</p>
+                    <p>Email: support@onlinecourse.com<br>Phone: +91-123-456-7890</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Online Course Platform. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
